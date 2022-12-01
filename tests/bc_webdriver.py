@@ -83,6 +83,8 @@ class BCSelWebDriver(unittest.TestCase):
         self.driver.find_element(By.XPATH,job_title_col).click()
         self.driver.find_element(By.XPATH,
                                  '//div[@role="option"]//span[text()="QA Engineer"]').click()
+        self.driver.find_element(By.XPATH, '//input[@placeholder="yyyy-mm-dd"]').click()
+        self.driver.find_element(By.XPATH, '//div[text()="Today"]').click()
         self.driver.find_element(By.XPATH, '//button[@type="submit"]').click()
 
         self.driver.find_element(By.XPATH, '//span[text()="PIM"]').click()
