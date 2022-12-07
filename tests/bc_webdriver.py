@@ -121,11 +121,11 @@ class BCSelWebDriver(unittest.TestCase):
 
         text_element_is_present = True
         try:
-            self.driver.find_element(By.XPATH,
-                                                  '//span[text() = "No Records Found"]')
+            self.driver.find_element(By.XPATH, '//span[text() = "No Records Found"]')
         except NoSuchElementException:
             text_element_is_present = False
         self.assertTrue(text_element_is_present)
+
 
 if __name__ == '__main__':
     unittest.main()
